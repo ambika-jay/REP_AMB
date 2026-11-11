@@ -14,6 +14,7 @@ outputs:
     description: 'The generated pseudo-random number'
     # This maps the action's top-level output to a specific internal step's output
     value: ${{ steps.rng-step.outputs.random-id }}
+    uses: ./.github/actions/random-generator
  
 runs:
   using: 'composite' # Tells GitHub this is a composite action
