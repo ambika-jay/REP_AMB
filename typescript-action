@@ -16,3 +16,8 @@ export const getUserData = (userId:any) => {
     id:userId
   };
 };
+
+    -name: check format
+     id: npm-lint
+     run: nom run ci-test
+
